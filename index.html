@@ -31,17 +31,28 @@
      (no account needed for a quick link) or deploy however you like.
   ============================================================
 -->
-<script>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
   const firebaseConfig = {
-    apiKey: "PASTE_YOUR_API_KEY",
-    authDomain: "PASTE_YOUR_PROJECT.firebaseapp.com",
-    projectId: "PASTE_YOUR_PROJECT_ID",
-    storageBucket: "PASTE_YOUR_PROJECT.appspot.com",
-    messagingSenderId: "PASTE_YOUR_SENDER_ID",
-    appId: "PASTE_YOUR_APP_ID"
+    apiKey: "AIzaSyDQcDhZDSwpXHr3ZM3wPPY8KmoZR-MoqvA",
+    authDomain: "july-in-the-east-2026.firebaseapp.com",
+    projectId: "july-in-the-east-2026",
+    storageBucket: "july-in-the-east-2026.firebasestorage.app",
+    messagingSenderId: "875478997730",
+    appId: "1:875478997730:web:9cb8198d314033b23d5cbb",
+    measurementId: "G-7XJ902DHLH"
   };
-  firebase.initializeApp(firebaseConfig);
-  const db = firebase.firestore();
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
 </script>
 
 <script type="text/babel">
